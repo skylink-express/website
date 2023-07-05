@@ -1,0 +1,12 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+a:hover {
+  cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease;
+
+  color: #E84242;
+  border-color: #E84242;
+  text-decoration: none;
+}

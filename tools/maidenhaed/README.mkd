@@ -1,0 +1,11 @@
+# Maidenhead query
+
+https://pypi.org/project/maidenhead/
+
+## Install
+
+pip install maidenhead
+
+## Usage
+
+    cat transfers.txt | awk '{ print $7 " " $10 }' | xargs -n 2 ./coords.sh >transfers.json

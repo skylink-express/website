@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>ion-token-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20.8440003" cy="20.8440003" r="20.8440003"></circle>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="minimal-launching-site" transform="translate(-41.000000, -33.000000)">
+            <g id="ion-token-logo" transform="translate(42.000000, 34.000000)">
+                <g id="Group-3" transform="translate(2.172000, 2.172000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Oval" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(-5.420000, 0.000000)">
+                            <g id="Group-2-Copy" stroke-width="1" fill="none" transform="translate(8.536800, 2.990400)">
+                                <g id="Group" stroke="#000000" stroke-width="1.89235177">
+                                    <circle id="Oval" cx="17.7127082" cy="17.7097514" r="17.7097514"></circle>
+                                    <circle id="Oval-Copy" cx="17.7127082" cy="17.7097514" r="13.1917616"></circle>
+                                    <circle id="Oval-Copy-2" cx="17.7127082" cy="17.7097514" r="8.81569812"></circle>
+                                </g>
+                            </g>
+                            <polygon id="Triangle" fill="#FFFFFF" transform="translate(25.702000, 11.106000) rotate(-180.000000) translate(-25.702000, -11.106000) " points="25.7020004 0 33.1440005 22.2120003 18.2600003 22.2120003"></polygon>
+                            <polygon id="Triangle-Copy" fill="#FFFFFF" transform="translate(25.702000, 33.318000) scale(1, -1) rotate(180.000000) translate(-25.702000, -33.318000) " points="25.7020004 22.2120003 51.4040008 44.4240007 0 44.4240007"></polygon>
+                            <circle id="Oval-Copy-8" fill="#000000" cx="26.2599983" cy="20.8455984" r="4.13200006"></circle>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-Copy-2" fill="#000000" mask="url(#mask-2)" x="18.5960003" y="22.2120003" width="4.49600007" height="15.8720002" rx="2.24800003"></rect>
+                </g>
+                <circle id="Oval" stroke="#000000" stroke-width="1.60000002" cx="23.0140003" cy="23.0140003" r="23.0140003"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
