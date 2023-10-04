@@ -28,3 +28,15 @@ jobs:
         #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: echo ${{ steps.ipfs.outputs.url }}
+      - run: echo ${{ steps.ipfs.outputs.cid }}
+
+  # Publish to the staging domain if it's a change on main 🚀
+  deploy:
+    name: Deploy https://skylink.express
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: npx dnslink-cloudflare --record staging --domain skylink.express --link /ipfs/${{ needs.build.outputs.cid }}
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_TOKEN }}
