@@ -1,0 +1,30 @@
+name: Website
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build & Add to IPFS
+    runs-on: ubuntu-latest
+    outputs:
+      cid: ${{ steps.ipfs.outputs.cid }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - uses: bahmutov/npm-install@v1
+      - run: npm run build 
+
+      # Add the site to web3.storage, output the cid as `steps.ipfs.outputs.cid`
+      - name: Add to web3.storage
+        uses: web3-storage/add-to-web3@v2
+        id: ipfs
+        with:
+          path_to_add: public
+          web3_token: ${{ secrets.WEB3_TOKEN }}
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: echo ${{ steps.ipfs.outputs.url }}
